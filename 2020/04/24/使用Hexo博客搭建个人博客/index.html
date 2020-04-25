@@ -14,6 +14,8 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-barber-shop.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -24,7 +26,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Hexo博客搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2020/04/24/%E4%BD%BF%E7%94%A8Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
-<meta property="og:site_name" content="Chen Lin Rui">
+<meta property="og:site_name" content="Chen Lin Rui&#39;s Blog 业精于勤荒于嬉 行成于思毁于随">
 <meta property="og:description" content="#使用Hexo博客搭建个人博客 ##第一篇文章 ###三级标题">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2020/04/24/JDPk8J.jpg">
@@ -49,7 +51,7 @@
   };
 </script>
 
-  <title>使用Hexo博客搭建个人博客 | Chen Lin Rui</title>
+  <title>使用Hexo博客搭建个人博客 | Chen Lin Rui's Blog 业精于勤荒于嬉 行成于思毁于随</title>
   
 
 
@@ -105,9 +107,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Chen Lin Rui</h1>
+      <h1 class="site-title">Chen Lin Rui's Blog 业精于勤荒于嬉 行成于思毁于随</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Html Css JavaScript Vue Node.js</p>
   </div>
 
   <div class="site-nav-right">
@@ -186,6 +189,22 @@
 
     
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+<!-- 天气预报 -->
+<script type="text/javascript">
+WIDGET = {FID: 'atrGVBogAI'}
+</script>
+<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+
+<script type="text/javascript" src="/js/clicklove.js"></script>
+ 
+  
+
+
+
+ 
+
+
+
 
 
 
@@ -208,11 +227,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/untitled.png">
       <meta itemprop="name" content="陈林睿">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="一名来自贵州的小伙儿，热爱Web前端，乐于与他人分享技术，用这个博客记录自己成长的点点滴滴。">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chen Lin Rui">
+      <meta itemprop="name" content="Chen Lin Rui's Blog 业精于勤荒于嬉 行成于思毁于随">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -326,6 +345,23 @@
 
         
 
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>陈林睿
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/04/24/%E4%BD%BF%E7%94%A8Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="使用Hexo博客搭建个人博客">http://yoursite.com/2020/04/24/使用Hexo博客搭建个人博客/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
   <div class="followme">
     <p>欢迎关注我的其它发布渠道</p>
 
@@ -363,6 +399,7 @@
           </div>
 
         
+
 
 
         
@@ -409,6 +446,9 @@
     <span class="toggle-line toggle-line-middle"></span>
     <span class="toggle-line toggle-line-last"></span>
   </div>
+  
+
+
 
   <aside class="sidebar">
     <div class="sidebar-inner">
@@ -432,7 +472,7 @@
     <img class="site-author-image" itemprop="image" alt="陈林睿"
       src="/images/untitled.png">
   <p class="site-author-name" itemprop="name">陈林睿</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">一名来自贵州的小伙儿，热爱Web前端，乐于与他人分享技术，用这个博客记录自己成长的点点滴滴。</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -468,6 +508,9 @@
         <a href="https://weibo.com/u/6393966646/home?wvr=5" title="weixin → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;6393966646&#x2F;home?wvr&#x3D;5" rel="noopener" target="_blank"><i class="fab fa-weixin fa-fw"></i>weixin</a>
       </span>
   </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
   <div class="links-of-blogroll motion-element">
@@ -484,8 +527,11 @@
       </div>
 
     </div>
+    <!--网易云播放器-->
+    <div><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=478497102&auto=0&height=66"></iframe></div>
   </aside>
   <div id="sidebar-dimmer"></div>
+  
 
 
       </div>
@@ -574,8 +620,7 @@
 
 
   <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-    <script defer src="/lib/three/canvas_sphere.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
 
 
   
@@ -631,5 +676,5 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

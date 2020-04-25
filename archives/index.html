@@ -14,16 +14,20 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-barber-shop.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Chen Lin Rui">
+  <meta name="description" content="一名来自贵州的小伙儿，热爱Web前端，乐于与他人分享技术，用这个博客记录自己成长的点点滴滴。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chen Lin Rui&#39;s Blog 业精于勤荒于嬉 行成于思毁于随">
 <meta property="og:url" content="http://yoursite.com/archives/index.html">
-<meta property="og:site_name" content="Chen Lin Rui">
+<meta property="og:site_name" content="Chen Lin Rui&#39;s Blog 业精于勤荒于嬉 行成于思毁于随">
+<meta property="og:description" content="一名来自贵州的小伙儿，热爱Web前端，乐于与他人分享技术，用这个博客记录自己成长的点点滴滴。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="陈林睿">
 <meta name="twitter:card" content="summary">
@@ -41,7 +45,7 @@
   };
 </script>
 
-  <title>归档 | Chen Lin Rui</title>
+  <title>归档 | Chen Lin Rui's Blog 业精于勤荒于嬉 行成于思毁于随</title>
   
 
 
@@ -97,9 +101,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Chen Lin Rui</h1>
+      <h1 class="site-title">Chen Lin Rui's Blog 业精于勤荒于嬉 行成于思毁于随</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Html Css JavaScript Vue Node.js</p>
   </div>
 
   <div class="site-nav-right">
@@ -178,6 +183,22 @@
 
     
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+<!-- 天气预报 -->
+<script type="text/javascript">
+WIDGET = {FID: 'atrGVBogAI'}
+</script>
+<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+
+<script type="text/javascript" src="/js/clicklove.js"></script>
+ 
+  
+
+
+
+ 
+
+
+
 
 
 
@@ -269,6 +290,9 @@
     <span class="toggle-line toggle-line-middle"></span>
     <span class="toggle-line toggle-line-last"></span>
   </div>
+  
+
+
 
   <aside class="sidebar">
     <div class="sidebar-inner">
@@ -292,7 +316,7 @@
     <img class="site-author-image" itemprop="image" alt="陈林睿"
       src="/images/untitled.png">
   <p class="site-author-name" itemprop="name">陈林睿</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">一名来自贵州的小伙儿，热爱Web前端，乐于与他人分享技术，用这个博客记录自己成长的点点滴滴。</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -328,6 +352,9 @@
         <a href="https://weibo.com/u/6393966646/home?wvr=5" title="weixin → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;6393966646&#x2F;home?wvr&#x3D;5" rel="noopener" target="_blank"><i class="fab fa-weixin fa-fw"></i>weixin</a>
       </span>
   </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
   <div class="links-of-blogroll motion-element">
@@ -344,8 +371,11 @@
       </div>
 
     </div>
+    <!--网易云播放器-->
+    <div><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=478497102&auto=0&height=66"></iframe></div>
   </aside>
   <div id="sidebar-dimmer"></div>
+  
 
 
       </div>
@@ -434,8 +464,7 @@
 
 
   <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-    <script defer src="/lib/three/canvas_sphere.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
 
 
   
@@ -491,5 +520,5 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
