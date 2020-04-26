@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Chen Lin Rui&#39;s Blog 业精于勤荒于嬉 行成于思毁于随</title>
+  
+  <subtitle>Html Css JavaScript Vue Node.js</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-26T12:21:14.906Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>陈林睿</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Hexo博客搭建个人博客</title>
+    <link href="http://yoursite.com/2020/04/24/%E4%BD%BF%E7%94%A8Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/04/24/%E4%BD%BF%E7%94%A8Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-04-24T07:59:41.000Z</published>
+    <updated>2020-04-26T12:21:14.906Z</updated>
+    
+    <content type="html"><![CDATA[<p>#记录一下自己Hexo博客搭建过程<br>1.安装node.js,进入官网下载<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js</a></p><a id="more"></a><p>下载安装完成后，windows键+R打开cmd命令窗口，输入node-v，npm-v,如图所示代表node环境安装成功<a href="https://imgchr.com/i/J6Vwz6" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/25/J6Vwz6.png" alt="J6Vwz6.png"></a></p><p>2.当node环境安装成功后，我们就可以正式安装Hexo博客框架,利用npm包管理器安装，由于国内镜像源的速度很慢，我们可以利用npm安装cnpm(即淘宝的镜像源)</p><p>3.输入以下命令：<br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br>等待安装完成</p><p>4.输入<code>cnpm-v</code>可查看版本</p><p>5.输入命令<code>cnpm install -g hexo-cli</code>命令安装Hexo<br><a href="https://imgchr.com/i/J6mzOf" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/25/J6mzOf.png" alt="J6mzOf.png"></a></p><p>6.可用<code>hexo-v</code>验证一下hexo是否安装完成<br><a href="https://imgchr.com/i/J6nYX6" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/25/J6nYX6.png" alt="J6nYX6.png"></a></p><p>7.输入<code>mkdir blog</code>命令建立一个blog的空文件，一会博客里的所有东西都会在<strong>blog</strong>这个文件里生成<br>再输入<code>hexo init</code>命令对博客进行初始化<br><a href="https://imgchr.com/i/J6nLHU" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/25/J6nLHU.png" alt="J6nLHU.png"></a></p><p>8.经过一段时间等待后,当看见了<code>Start Blogging with Hexo</code>时，表明Hexo搭建完成，如图：<br><a href="https://imgchr.com/i/J6nLHU" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/25/J6nLHU.png" alt="J6nLHU.png"></a></p><p>9.最后输入hexo s命令，按下回车键后得到一个<a href="http://localhost:4000地址，在浏览器输出此地址就可以看到Hexo博客画面！">http://localhost:4000地址，在浏览器输出此地址就可以看到Hexo博客画面！</a></p><p>10.<strong>大功告成！！！</strong></p><blockquote><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo官网</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next主题官网</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#记录一下自己Hexo博客搭建过程&lt;br&gt;1.安装node.js,进入官网下载&lt;a href=&quot;https://nodejs.org/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="导航" scheme="http://yoursite.com/tags/%E5%AF%BC%E8%88%AA/"/>
+    
+      <category term="分类" scheme="http://yoursite.com/tags/%E5%88%86%E7%B1%BB/"/>
+    
+  </entry>
+  
+</feed>
