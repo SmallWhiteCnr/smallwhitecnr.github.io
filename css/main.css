@@ -1181,7 +1181,7 @@ body {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #bffe2d;
+  background: #1b6675;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1381,8 +1381,8 @@ body {
   font-size: 0.8125em;
 }
 .footer {
-  color: #999;
-  font-size: 0.875em;
+  color: #00f;
+  font-size: 14px;
   padding: 20px 0;
 }
 .footer.footer-fixed {

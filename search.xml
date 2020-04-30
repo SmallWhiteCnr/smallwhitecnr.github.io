@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML标签知识归纳</title>
+    <url>/2020/04/27/HTML%E6%A0%87%E7%AD%BE%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</url>
+    <content><![CDATA[<p>#HTML标签</p>
+<p>1.表格标签<br>作用：显示、展示数据&lt;后台显示数据&gt;</p>
+<a id="more"></a>
+
+<p>2.语法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;td&gt;单元格内的内容&lt;&#x2F;td&gt;</span><br><span class="line">    ...</span><br><span class="line">  &lt;&#x2F;tr&gt;</span><br><span class="line">&lt;&#x2F;table&gt;</span><br></pre></td></tr></table></figure>
+<p><code>&lt;table&gt;&lt;/table&gt;</code>定义表格<br><code>&lt;tr&gt;&lt;/tr&gt;</code>定义表格中的行<br><code>&lt;td&gt;&lt;/td&gt;</code>定义表格中的单元格<br><code>td(table data)</code>即单元格的内容</p>
+<p>3.表头单元格标签&lt;文本内容加粗居中显示&gt;</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">       &lt;th&gt;单元格内的文字&lt;&#x2F;th&gt;</span><br><span class="line">       ...</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">&lt;&#x2F;table&gt;</span><br></pre></td></tr></table></figure>
+<p>4.表格属性<br><strong>align、border、cellpadding、cellspacing、width5个属性</strong><br><em>align,属性值：left,center,right;表格相对周围元素的对齐方式</em><br><em>border表格单元是否有边框，默认为””,表示无,1代表有边框</em><br><em>cellpadding单元边沿与其内容之间的空白,默认为1像素</em><br><em>cellspacing单元格之间的空白，默认为2像素</em><br><em>width表格的宽度</em></p>
+<p>5.表格结构标签<br><code>&lt;thead&gt;&lt;/thead&gt;</code>定义表格的头部,<strong><thead></strong>内部必有<strong><tr></strong>标签，位于第一行<br><code>&lt;tbody&gt;&lt;/tbody&gt;</code>定义表格的主体，放数据本体<br>以上两个标签放在<code>&lt;table&gt;&lt;/table&gt;</code>标签中</p>
+<p>列表标签<br>1.无序列表</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">   &lt;li&gt;列表项1&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;列表项2&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;列表项3&lt;&#x2F;li&gt;</span><br><span class="line">   ...</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
+<p>a.无序列表的各个列表项无顺序级别之分,并列<br>b.<code>&lt;ul&gt;&lt;/ul&gt;</code>只嵌套<code>&lt;li&gt;&lt;/li&gt;</code>，直接在<code>&lt;ul&gt;&lt;/ul&gt;</code>标签中输入其他标签或者文字是不允许的<br>c.<code>&lt;li&gt;</code>与<code>&lt;/li&gt;</code>之间相当于一个容器，可容纳所有元素</p>
+<p>表单标签<br>1.表单域：包含表单元素的区域<br><code>&lt;form&gt;</code>标签定义表单域，<code>&lt;form&gt;</code>把范围内的表单元素信息提交给服务器</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;form action&#x3D;&quot;url地址&quot; method&#x3D;&quot;提交方式&quot;  name&#x3D;&quot;表单域名称&quot;&gt;</span><br><span class="line">    各种表单元素控件</span><br><span class="line">&lt;&#x2F;form&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>action属性</strong>,属性值为url地址，作用：指定接受并处理表单数据的服务器程序的url地址<br><strong>method属性</strong>,属性值get/post，作用：设定表单数据的提交方式<br><strong>name</strong>,属性值为名称，作用：指定表单的名称，以区分同一个页面的的多个表单域</p>
+<p>2.表单元素<br> <code>&lt;input&gt;</code>表单元素<br> <strong>type属性</strong>的属性值和描述如下：<br> <em>button</em>可击按钮，用于通过Javascript启动脚本<br> <em>checkbox</em>复选框<br> <em>file</em>输入字段和”浏览”按钮，供文件上传<br> <em>hidden</em>隐藏的输入字段<br> <em>image</em>图像形式的提交按钮<br> <em>password</em>密码字段<br> <em>radio</em>单选按钮<br> <em>reset</em>重置按钮<br> <em>submit</em>重置按钮，发送到服务器<br> <em>text</em>单行的输入字段，宽度为20个字符</p>
+<p> 3.<code>&lt;input&gt;</code>标签的其他属性<br> <strong>name</strong>用户自定义，定义<code>input</code>元素的名称<br> <strong>value</strong>用户自定义，规定<code>input</code>元素的值<br> <strong>checked</strong>，属性值为checked,表示input元素首次加载被选中<br> <strong>maxlength</strong>,属性值为正整数,表示输入字段的字符的最大长度</p>
+<p><em>name和value是每个表单元素的属性值，供后台人员使用</em><br><em>name表单元素的名字,单选按钮和复选框要有相同的值</em><br><em>checked主要针对于单选按钮和复选框</em></p>
+<p>4.<code>&lt;label&gt;</code>标签<br><code>&lt;label&gt;</code>标签用于绑定一个表单元素,当点击<code>&lt;label&gt;</code>标签内的文本时，浏览器自动将光标移动到对应的表单元素，以增加用户的体验</p>
+<p><strong>语法</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;label for&#x3D;&quot;sex&quot;&gt;男&lt;&#x2F;label&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;sex&quot; id&#x3D;&quot;sex&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p><strong><label>标签的for属性应当与相关的id属性相同</strong></p>
+<p>5.<code>&lt;select&gt;</code>表单元素(定义下拉列表)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">   &lt;option&gt;选项1&lt;&#x2F;option&gt;</span><br><span class="line">   &lt;option&gt;选项2&lt;&#x2F;option&gt;</span><br><span class="line">   &lt;option&gt;选项3&lt;&#x2F;option&gt;</span><br><span class="line">   ...</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure>
+<p><code>&lt;select&gt;</code>中至少包含一对<code>&lt;option&gt;</code><br><code>&lt;option&gt;</code>中定义`selected=”selected”时，当前项即默认选中项</p>
+<p>6.<code>&lt;textarea&gt;</code>表单元素<br><strong>语法</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;textarea rows&#x3D;&quot;3&quot; cols&#x3D;&quot;20&quot;&gt;</span><br><span class="line">   文本内容</span><br><span class="line">&lt;&#x2F;textarea&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>cols=”每行中的字符数”,rows=”行数”</strong></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Html</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用Hexo博客搭建个人博客</title>
     <url>/2020/04/24/%E4%BD%BF%E7%94%A8Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>#记录一下自己Hexo博客搭建过程<br>1.安装node.js,进入官网下载<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js</a></p>
@@ -23,8 +64,17 @@
         <category>前端</category>
       </categories>
       <tags>
+        <tag>Html</tag>
         <tag>导航</tag>
         <tag>分类</tag>
+        <tag>Vue</tag>
+        <tag>CSS</tag>
+        <tag>JavaScript</tag>
+        <tag>微信小程序</tag>
+        <tag>算法</tag>
+        <tag>操作系统</tag>
+        <tag>数据结构</tag>
+        <tag>Hexo博客</tag>
       </tags>
   </entry>
 </search>
